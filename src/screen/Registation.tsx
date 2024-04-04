@@ -151,10 +151,10 @@ const Registation: React.FC<RegistationProps> = ({ navigation }) => {
            }} style={styles.ModalMain}>
             <View style={styles.ModalView}>
               <Pressable hitSlop={styles.hitSlop} onPress={handleCameraLaunch} style={styles.ButtonModal}>
-                <Text>Camera</Text>
+                <Text style={styles.textModal}>Camera</Text>
               </Pressable>
               <Pressable hitSlop={styles.hitSlop}  onPress={openImagePicker}style={styles.ButtonModal}>
-                <Text>Gallary</Text>
+                <Text style={styles.textModal}>Gallary</Text>
               </Pressable>
             </View>
 
@@ -287,7 +287,7 @@ const Registation: React.FC<RegistationProps> = ({ navigation }) => {
                     }
                 </View>
                 <TouchableOpacity style={styles.ImagePickerView} onPress={()=>{setmodal(true)}}>
-                  <Text>Choose Image</Text>
+                  <Text style={styles.textModal}>Choose Image</Text>
                 </TouchableOpacity>
                { selectedImage&&<Image source={{uri:selectedImage}} style={styles.SelectImage}/>}
                 <View style={styles.ButtonView}>
@@ -360,6 +360,9 @@ const styles = StyleSheet.create({
     width:moderateScale(100),
     marginTop:moderateScaleVertical(10),
     borderRadius:moderateScale(10)
+  },
+  textModal:{
+    color:'black'
   }
 
 })

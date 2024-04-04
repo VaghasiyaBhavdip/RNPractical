@@ -58,7 +58,8 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     LabelText: {
-        marginLeft: moderateScale(10)
+        marginLeft: moderateScale(10),
+        color:'black'
     }
 });
 

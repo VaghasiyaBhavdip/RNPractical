@@ -30,7 +30,8 @@ const RedioButton: React.FC<RedioProps> = ({ onChangeRedio = (val: any) => { } }
     }, [selectedId])
     return (
         <RadioGroup
-            containerStyle={{ flexDirection: "row" }}
+            containerStyle={{ flexDirection: "row", }}
+            labelStyle={{color:'black'}}
             radioButtons={radioButtons}
             onPress={(e) => { setSelectedId(e) }}
             selectedId={selectedId}
